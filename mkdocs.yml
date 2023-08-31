@@ -1,0 +1,138 @@
+# ------------------------------------------------------
+# Page tree
+# ------------------------------------------------------
+nav:
+  - index.md
+  - 🚀 Getting Started:
+    - Introduction: pages/documentation/introduction.md
+    - Installation: pages/documentation/installation.md
+    - QuickStart: pages/documentation/quickstart.md
+    - Modules:
+      - Modules I/O:
+        - Prompts: pages/documentation/modules/prompts.md
+        - Language Models:  pages/documentation/modules/language-models.md
+        - Parsers: pages/documentation/modules/parsers.md
+      - Retrieval:
+        - Document Loaders:  pages/documentation/retrieval/document-loaders.md
+        - Document Transformers:  pages/documentation/document-transformers.md
+        - Retrievers:  pages/documentation/retrieval/retrievers.md
+      - Chains:
+        - Introduction: pages/modules/chains/main.md
+      - Memory:
+        - Introduction: pages/modules/memory/main.md
+      - Agents:
+        - Introduction: pages/modules/agents/main.md
+
+  - 🔗‍ Integrations:
+    - pages/integrations/index.md
+    - Embedding Stores:
+        - Chroma: pages/integrations/embeddings/chroma.md
+        - Pinecone: pages/integrations/embeddings/pinecone.md
+        - Astra: pages/integrations/embeddings/astra.md
+    - Memory Store:
+        - InMemory: pages/integrations/memory/in-memory.md
+  - 💻  Sample Codes:
+      - Home: pages/samples/index.md
+      - Cheat: cheat.md
+  
+# ------------------------------------------------------
+# Settings
+# ------------------------------------------------------
+
+# Project information
+site_name: Langchain4j
+site_url: https://langchain4j.github.io
+site_author: Langchain4j
+site_description: >-
+ Documentation for Langchain4j
+
+# Repository
+repo_name: langchain4j/docs
+repo_url: https://github.com/langchain4j/langchain4j-docs
+edit_uri: ""
+
+# Theme
+theme:
+ name: material
+ language: en
+
+ favicon: img/favicon.svg
+ logo: img/favicon.ico
+ custom_dir: docs/overrides
+
+ features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+ palette:
+
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+ include_search_page: false
+ search_index_only: true
+
+# Markdown Support
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  #- pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date
+  - mkdocs-video
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/langchain4j
